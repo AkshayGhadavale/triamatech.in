@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C M AMBORE & COMPANY | Premier Chartered Accountants</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,700&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+
+body{font-family:'Inter',sans-serif}
+.font-serif{font-family:'Playfair Display',serif}
+
+.text-brand{color:#005A64}
+.bg-brand{background:#005A64}
+.border-brand{border-color:#005A64}
+
+img{max-width:100%;height:auto}
+
+/* company title */
+
+.brand-title{
+letter-spacing:.05em;
+background:linear-gradient(90deg,#005A64,#0ea5a8,#005A64);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+/* fade animation */
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.animate-fade-up{
+opacity:0;
+animation:fadeUp .8s ease forwards;
+}
+
+/* hero overlay */
+
+.hero-overlay{
+background:linear-gradient(135deg,rgba(255,255,255,.97)0%,rgba(255,255,255,.85)50%,rgba(255,255,255,0)100%)
+}
+
+/* glass card */
+
+.glass-card{
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.3)
+}
+
+/* card hover */
+
+.service-hover{
+transition:all .4s ease;
+}
+
+.service-hover:hover{
+transform:translateY(-12px) scale(1.04);
+box-shadow:0 30px 60px rgba(0,90,100,.18);
+}
+
+/* mobile tap animation */
+
+.service-hover:active{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* icon animation */
+
+.service-hover i{
+transition:all .4s ease;
+}
+
+.service-hover:hover i{
+transform:scale(1.35) rotate(8deg);
+}
+
+/* icon floating animation */
+
+@keyframes floatIcon{
+0%{transform:translateY(0)}
+50%{transform:translateY(-6px)}
+100%{transform:translateY(0)}
+}
+
+.service-hover i{
+animation:floatIcon 3s ease-in-out infinite;
+}
+
+</style>
+
+</head>
+
+<body class="bg-[#FDFDFD] text-slate-800 antialiased">
+
+<div class="bg-brand text-white py-2 px-4 lg:px-12 flex justify-between items-center text-[11px] font-semibold tracking-widest uppercase">
+
+<div class="flex gap-4 md:gap-6">
+<span>📍 Pune, Maharashtra</span>
+<span>📞 +91 7972562471</span>
+</div>
+
+<div class="hidden md:block">
+ISO Certified Standards | Reliable Financial Advisory
+</div>
+
+</div>
+
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+
+<div class="flex flex-col group cursor-pointer">
+
+<h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold brand-title italic transition-all duration-300 group-hover:tracking-wide">
+C M AMBORE & COMPANY
+</h1>
+
+<p class="text-[10px] font-bold text-slate-400 tracking-[0.35em] border-t border-slate-100 pt-1 uppercase">
+Chartered Accountants
+</p>
+
+</div>
+
+<nav class="hidden lg:flex items-center space-x-10 text-xs font-bold uppercase tracking-wider text-slate-500">
+
+<a href="#home" class="text-brand border-b-2 border-brand pb-1">Home</a>
+
+<a href="#about" class="hover:text-brand transition">Firm Profile</a>
+
+<a href="#services" class="hover:text-brand transition">Expertise</a>
+
+<a href="#contact" class="hover:text-brand transition">Contact</a>
+
+<a href="mailto:cmambore@gmail.com"
+class="bg-brand text-white px-7 py-3 rounded-full shadow-lg hover:scale-105 transition">
+Request Audit
+</a>
+
+</nav>
+
+<button class="lg:hidden text-brand">
+<i data-lucide="menu"></i>
+</button>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section id="home" class="relative min-h-[85vh] flex items-center overflow-hidden bg-slate-50">
+
+<div class="absolute inset-0 z-0">
+
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000"
+class="w-full h-full object-cover">
+
+<div class="absolute inset-0 hero-overlay"></div>
+
+</div>
+
+
+<div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+<div class="animate-fade-up">
+
+<div class="inline-flex items-center gap-2 bg-brand/10 text-brand px-4 py-1.5 rounded-full text-xs font-bold mb-6">
+
+<span class="relative flex h-2 w-2">
+
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+
+<span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+
+</span>
+
+Trusted Financial Excellence
+
+</div>
+
+<h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-brand leading-[1.1] mb-8">
+Defining <br><span class="italic font-light">Precision</span> in <br>Finance.
+</h2>
+
+<p class="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed">
+Led by <strong>CA Chandrakant M Ambore</strong> (ACA, B.COM, G.D.C.A), we provide strategic audit and tax solutions designed for Pune's growing business landscape.
+</p>
+
+<div class="flex flex-wrap items-center gap-6">
+
+<button class="bg-brand text-white px-10 py-4 rounded-xl font-bold text-sm shadow-2xl hover:bg-opacity-90 transition">
+Consult Our Experts
+</button>
+
+<a href="#about"
+class="text-brand font-bold text-sm border-b-2 border-brand/20 hover:border-brand py-1">
+View Firm Profile
+</a>
+
+</div>
+
+</div>
+
+<div class="hidden md:block animate-fade-up" style="animation-delay:.2s">
+
+<div class="relative">
+
+<div class="absolute -inset-4 bg-brand/5 rounded-3xl -rotate-3"></div>
+
+<img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"
+class="relative rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+
+<div class="absolute -bottom-10 -left-10 glass-card p-6 rounded-2xl shadow-xl max-w-xs">
+
+<p class="text-brand font-bold text-2xl">15+ Years</p>
+
+<p class="text-slate-500 text-xs font-semibold uppercase tracking-widest">
+Industry Experience
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services" class="py-20 md:py-32 max-w-7xl mx-auto px-6 lg:px-12">
+
+<div class="text-center mb-20">
+
+<h3 class="text-4xl font-serif text-brand mb-4">
+Core Areas of Expertise
+</h3>
+
+<div class="h-1 w-20 bg-brand mx-auto mb-6"></div>
+
+<p class="text-slate-500 max-w-xl mx-auto">
+Providing a comprehensive suite of financial services designed to mitigate risk and maximize growth potential.
+</p>
+
+</div>
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+
+<div class="group service-hover bg-white p-12 rounded-3xl border border-slate-100">
+<div class="w-16 h-16 bg-brand/5 rounded-2xl flex items-center justify-center text-brand mb-8 group-hover:bg-brand group-hover:text-white transition-all">
+<i data-lucide="calculator"></i>
+</div>
+<h4 class="font-bold text-brand mb-4 text-lg">Tax Compliance</h4>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">
+Strategic planning and filing for Direct and Indirect taxes ensuring zero penalties.
+</p>
+</div>
+
+
+<div class="group service-hover bg-white p-12 rounded-3xl border border-slate-100">
+<div class="w-16 h-16 bg-brand/5 rounded-2xl flex items-center justify-center text-brand mb-8 group-hover:bg-brand group-hover:text-white transition-all">
+<i data-lucide="shield-check"></i>
+</div>
+<h4 class="font-bold text-brand mb-4 text-lg">Statutory Audit</h4>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">
+Rigorous examination of financial statements.
+</p>
+</div>
+
+
+<div class="group service-hover bg-white p-12 rounded-3xl border border-slate-100">
+<div class="w-16 h-16 bg-brand/5 rounded-2xl flex items-center justify-center text-brand mb-8 group-hover:bg-brand group-hover:text-white transition-all">
+<i data-lucide="briefcase"></i>
+</div>
+<h4 class="font-bold text-brand mb-4 text-lg">Corporate Advisory</h4>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">
+Expert guidance on company formation.
+</p>
+</div>
+
+
+<div class="group service-hover bg-white p-12 rounded-3xl border border-slate-100">
+<div class="w-16 h-16 bg-brand/5 rounded-2xl flex items-center justify-center text-brand mb-8 group-hover:bg-brand group-hover:text-white transition-all">
+<i data-lucide="wallet"></i>
+</div>
+<h4 class="font-bold text-brand mb-4 text-lg">GST Solutions</h4>
+<p class="text-sm text-slate-500 leading-relaxed mb-6">
+End-to-end GST registration and audit services.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer id="contact" class="bg-slate-900 pt-20 md:pt-32 pb-12 text-slate-400">
+
+<div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mb-20">
+
+<div class="col-span-1 md:col-span-2">
+<h1 class="text-2xl font-extrabold text-white mb-6">
+C M AMBORE & COMPANY
+</h1>
+<p class="max-w-sm mb-10">
+Headquartered in Pune, we serve SMEs and corporations with world-class accounting standards.
+</p>
+</div>
+
+<div>
+<h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">
+Office Presence
+</h5>
+<p class="text-sm leading-relaxed">
+FL-B-18 SN 84/13 Near Shinde Pool<br>
+Siddhivinayak colony Shivane<br>
+Pune Maharashtra INDIA
+</p>
+</div>
+
+<div>
+<h5 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">
+Direct Channels
+</h5>
+<p class="text-sm mb-2">
+Phone: <span class="text-white">+91 7972562471</span>
+</p>
+<p class="text-sm">
+Email: <span class="text-white italic">cmambore@gmail.com</span>
+</p>
+</div>
+
+</div>
+
+<div class="max-w-7xl mx-auto px-6 lg:px-12 border-t border-slate-800 pt-10 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-widest gap-4">
+
+<p>© 2026 C M AMBORE & COMPANY. All Rights Reserved.</p>
+
+<div class="flex gap-10">
+<a href="#" class="hover:text-white">Privacy</a>
+<a href="#" class="hover:text-white">Terms</a>
+</div>
+
+</div>
+
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+lucide.createIcons();
+});
+</script>
+
+</body>
+</html>
